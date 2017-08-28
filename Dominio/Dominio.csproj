@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36C0BA94-0456-4E68-AA07-79538B3D1808}</ProjectGuid>
+    <ProjectGuid>{4E563E9F-4E41-4771-AE17-DB29ECDD0650}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LinaFood</RootNamespace>
-    <AssemblyName>LinaFood</AssemblyName>
+    <RootNamespace>Dominio</RootNamespace>
+    <AssemblyName>Dominio</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caja.cs" />
+    <Compile Include="CheckTotal.cs" />
+    <Compile Include="IRepositoryCaja.cs" />
+    <Compile Include="IRepositoryTicket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ticket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

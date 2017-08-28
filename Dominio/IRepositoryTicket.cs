@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinaFood
+namespace Servicios
 {
-    class Program
+    public interface IRepositoryTicket
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }

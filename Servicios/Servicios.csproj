@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{146FAE2D-4EBD-4192-B518-8C13B69246F9}</ProjectGuid>
+    <ProjectGuid>{CCA64DA7-0292-4E6C-936D-3B2D88ADEEB1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Infraestructura</RootNamespace>
-    <AssemblyName>Infraestructura</AssemblyName>
+    <RootNamespace>Servicios</RootNamespace>
+    <AssemblyName>Servicios</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,14 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="IServiceCaja.cs" />
+    <Compile Include="IServiceTicket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryCaja.cs" />
-    <Compile Include="RepositoryTicket.cs" />
+    <Compile Include="ServiceCaja.cs" />
+    <Compile Include="ServiceTicket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infraestructura\Infraestructura.csproj">
+      <Project>{146fae2d-4ebd-4192-b518-8c13b69246f9}</Project>
+      <Name>Infraestructura</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
