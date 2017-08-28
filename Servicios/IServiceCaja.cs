@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Servicios
 {
-    interface IServiceCaja
+    public interface IServiceCaja
     {
     }
 }

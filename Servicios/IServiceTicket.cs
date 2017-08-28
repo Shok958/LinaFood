@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Servicios
 {
-    interface IServiceTicket
+    public interface IServiceTicket
     {
     }
 }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCA64DA7-0292-4E6C-936D-3B2D88ADEEB1}</ProjectGuid>
+    <ProjectGuid>{FFF5078D-8ABA-4F9E-B61A-6CEDF0CA6F83}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Servicios</RootNamespace>
     <AssemblyName>Servicios</AssemblyName>
@@ -50,12 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Infraestructura\Infraestructura.csproj">
-      <Project>{146fae2d-4ebd-4192-b518-8c13b69246f9}</Project>
-      <Name>Infraestructura</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
